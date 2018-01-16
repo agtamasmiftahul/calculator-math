@@ -153,7 +153,7 @@ function showAdvancedSecond() {
     firstNumber = Number(firstNumber);
     secondNumber = Number(secondNumber);
     substract(add(firstNumber, secondNumber), multiply(firstNumber, secondNumber));
-    showToast(`(${firstNumber} + ${secondNumber}) + (${firstNumber} x ${secondNumber}) = ${result}`, 1000);
+    showToast(`(${firstNumber} + ${secondNumber}) - (${firstNumber} x ${secondNumber}) = ${result}`, 1000);
   } else if (isNaN(firstNumber) !== true && isNaN(secondNumber) === true) {
     showToast('Your first input is a number, but your second input is not a number. Please, input a number', 1000);
   } else if (isNaN(firstNumber) === true && isNaN(secondNumber) !== true) {
